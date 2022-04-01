@@ -89,7 +89,7 @@ static List<List<string>> ReadCsvFile()
                 string line = reader.ReadLine();
                 while (!reader.EndOfStream)
                 {
-                    if (!Regex.IsMatch(line, @"^\w+,+\w+csv$") || line.Contains(" "))//validation
+                    if (!Regex.IsMatch(line, @"^\w+,+\w$") || line.Contains(" "))//validation
                     {
                         Console.WriteLine("Input data badly formatted!");
                         Environment.Exit(0);
