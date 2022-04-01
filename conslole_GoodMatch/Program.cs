@@ -1,12 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
+﻿using System.Text.RegularExpressions;
 //method for getting the frequency string 
-
-using System.Net.Mime;
-using System.Text.RegularExpressions;
-
 static string CalcFreq(string input) 
 {
     List<char> checkedChars = new List<char>();
@@ -84,7 +77,7 @@ static List<List<string>> ReadCsvFile()
 {
     var malePlayers = new List<string>();
     var femalePlayers = new List<string>();
-    Console.WriteLine("Please Enter CSV file path: ");
+    Console.WriteLine("Please Enter CSV file FULL path: ");
     string input = Console.ReadLine();
     try
     {
@@ -96,7 +89,7 @@ static List<List<string>> ReadCsvFile()
                 string line = reader.ReadLine();
                 while (!reader.EndOfStream)
                 {
-                    if (!Regex.IsMatch(line, @"^\w+,+\w$") || line.Contains(" "))//validation
+                    if (!Regex.IsMatch(line, @"^\w+,+\w+csv$") || line.Contains(" "))//validation
                     {
                         Console.WriteLine("Input data badly formatted!");
                         Environment.Exit(0);
@@ -145,10 +138,41 @@ static void ValidateName(string? name)
     }
 }
 
+static void RunOnFileData(List<List<string>> data)
+{
+    const string filename = "output.txt";
+    var males = data[0];
+    var females = data[1];
+    using var StrWr = new StreamWriter(filename);
+    foreach (var male in males)
+    {
+        Dictionary<string, int> dictUnsorted = new Dictionary<string, int>();
+        foreach (var female in females)
+        { 
+            var feedback = GoodMatch($"{male} matches {female}");
+            var percentage = int.Parse((feedback.Split(" "))[3].Remove(2));
+           
+           dictUnsorted.Add(feedback,percentage);
+        }
+        
+        var myDict = dictUnsorted.OrderBy(key => key.Key); //sort alphabetically first
+        
+        StrWr.WriteLine($"---------------{male}---------------");//heading
+        foreach (var item in myDict.OrderByDescending(key => key.Value))
+        {
+            StrWr.WriteLine(item.Key);
+        }
+
+        dictUnsorted.Clear();
+       
+    }
+    StrWr.Close();
+    Console.WriteLine("output.txt File Location: "+"bin->Debug->net6.0->output.txt");
+}
 /*----------------------------------------Main----------------------------------------*/
 Console.WriteLine("Enter 1 -> Get a match between two players.\nEnter 2 -> Input a csv file.\n");
 var input = Console.ReadLine();
-if (input.Equals("1"))
+if (input.Equals("1"))//get a match for two players
 {
     Console.Write("Enter the first name: ");
     string? firstName = Console.ReadLine();
@@ -163,10 +187,11 @@ if (input.Equals("1"))
     Console.Write("Press Any Key To Exit!");
     Console.ReadKey();
 }
-else if (input.Equals("2"))
+else if (input.Equals("2"))//for file input
 {
     var groups = ReadCsvFile();
-    Console.Write("Press Any Key To Exit!, ");
+    RunOnFileData(groups);
+    Console.Write("Press Any Key To Exit!,");
     Console.ReadKey();
 }
 else
@@ -177,31 +202,3 @@ else
 }
 
 /*------------------------------------------------------------------------------------------*/
-public class Player
-{
-    private string _name; 
-    private string _gender;
-
-    public Player(string name, string gender)
-    {
-        _name = name;
-        _gender = gender;
-    }
-
-    public string Name
-    {
-        get{return _name;}
-        set
-        {
-            _name = value;
-        }
-    }
-    public string Gender
-    {
-        get{return _gender;}
-        set
-        {
-            _gender = value;
-        }
-    }
-}

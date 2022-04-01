@@ -1,0 +1,16 @@
+---------------Jason---------------
+Jason matches Billy 71%
+Jason matches Trini 71%
+Jason matches Kimberly 20%
+---------------Billy---------------
+Billy matches Trini 71%
+Billy matches Billy 62%
+Billy matches Kimberly 20%
+---------------Tommy---------------
+Tommy matches Billy 71%
+Tommy matches Trini 71%
+Tommy matches Kimberly 20%
+---------------Zack---------------
+Zack matches Kimberly, 91%, good match
+Zack matches Billy 61%
+Zack matches Trini 61%
