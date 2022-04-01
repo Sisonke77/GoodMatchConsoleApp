@@ -1,0 +1,17 @@
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\conslole_GoodMatch.exe
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\conslole_GoodMatch.deps.json
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\conslole_GoodMatch.runtimeconfig.json
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\conslole_GoodMatch.dll
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\conslole_GoodMatch.pdb
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.csproj.AssemblyReference.cache
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.AssemblyInfoInputs.cache
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.AssemblyInfo.cs
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.csproj.CoreCompileInputs.cache
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.dll
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\refint\conslole_GoodMatch.dll
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.pdb
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.genruntimeconfig.cache
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\ref\conslole_GoodMatch.dll
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\27766\RiderProjects\conslole_GoodMatch\conslole_GoodMatch\obj\Debug\net6.0\conslole_GoodMatch.csproj.CopyComplete

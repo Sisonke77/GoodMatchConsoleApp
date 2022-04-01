@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sFKzQ22N+u8AyjzYK9wpzOp+MxqDVoSkBPR3cYGL2jZRhqE8yhOtq4y+zFqteBZYVm/9b6rtA6V73JsNN0zqsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\27766\\RiderProjects\\conslole_GoodMatch\\conslole_GoodMatch\\conslole_GoodMatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\27766\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
